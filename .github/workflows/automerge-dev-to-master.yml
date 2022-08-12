@@ -5,13 +5,14 @@ on:
     branches:
       - development
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [closed]
     branches:
       - development
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  merge-branch:
+  # if_merged:
+    # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

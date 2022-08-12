@@ -7,5 +7,9 @@
   - changed to `if: github.event.pull_request.merged == true`
   - job no longer shows as running on initial pr
   - didn't merge to master
-  - replaced alll branch types
-    - types: [opened, synchronize, reopened, closed]
+- replaced alll branch types
+  - types: [opened, synchronize, reopened, closed]
+  - skipping correctly on development
+  - did not run on merge
+- removed merged === true
+  - types: [closed]  
