@@ -15,3 +15,5 @@
   - types: [closed] 
   - set back to [opened, synchronize, reopened, closed]
   - set master back to default - still failed
+  - new push, action check no present on initial PR
+- may have updated   
