@@ -12,4 +12,6 @@
   - skipping correctly on development
   - did not run on merge
 - removed merged === true
-  - types: [closed]  
+  - types: [closed] 
+  - set back to [opened, synchronize, reopened, closed]
+  - set master back to default - still failed
