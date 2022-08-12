@@ -5,7 +5,7 @@ on:
     branches:
       - development
   pull_request:
-    types: [closed]
+    types: [opened, synchronize, reopened, closed]
     branches:
       - development
 
