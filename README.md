@@ -17,3 +17,6 @@
   - set master back to default - still failed
   - new push, action check no present on initial PR
 - may have updated   
+  - action fails on intial pr
+  - runs successfully on merge
+- put if back in place with all types, see if it runs on merge  
