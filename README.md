@@ -22,3 +22,4 @@
 - put if back in place with all types, see if it runs on merge  
   - wrong branch, PR to dev
 - re-merge with everlytic/branch-merge@1.1.2
+- set development as default
