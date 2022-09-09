@@ -1,14 +1,14 @@
-name: Demo on merged PR
+name: Demo on merged PR 
 on: 
   pull_request_target:
     types:
       - closed
     branches: 
-      - 'development'
+      - 'master'
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - run: echo "🎯 Targets development branch."
-    - run: echo "🥃 Only runs `if_merged`."
+    - run: echo "🥃 Only runs if_merged to master."
