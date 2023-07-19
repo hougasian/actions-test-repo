@@ -1,27 +1,4 @@
 # actions-test-repo
 
-- one (worked)
-- two (~~failed after setting development to default branch~~)
-- three (worked on merge) 
-- four 
-  - changed to `if: github.event.pull_request.merged == true`
-  - job no longer shows as running on initial pr
-  - didn't merge to master
-- replaced alll branch types
-  - types: [opened, synchronize, reopened, closed]
-  - skipping correctly on development
-  - did not run on merge
-- removed merged === true
-  - types: [closed] 
-  - set back to [opened, synchronize, reopened, closed]
-  - set master back to default - still failed
-  - new push, action check no present on initial PR
-- may have updated   
-  - action fails on intial pr
-  - runs successfully on merge
-- put if back in place with all types, see if it runs on merge  
-  - wrong branch, PR to dev
-- re-merge with everlytic/branch-merge@1.1.2
-- set development as default
-- replace if_merged
-- put if back in place with all types, see if it runs on merge  
+## publish to npm on release
+- git tag {vX.X}
