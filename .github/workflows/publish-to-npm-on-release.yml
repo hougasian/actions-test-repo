@@ -25,7 +25,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: echo "👉 npm install"
       - run: echo "👉 npm build"
-         name: Publishing package version ${{ github.event.release.tag_name }}
+      - run: echo "Publishing package version ${{ github.event.release.tag_name }}""
       - run: echo "👉 npm publish --access public"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}          
