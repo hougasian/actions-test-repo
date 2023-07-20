@@ -18,16 +18,14 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - name: 🧳 Checkout 
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: echo "👉 npm install"
-      - name: building package 
-        run: echo "👉 npm build"
-      - name: Publishing package version ${{ github.event.release.tag_name }}
-        run: echo "👉 npm publish --access public"
+      - run: echo "👉 npm build"
+         name: Publishing package version ${{ github.event.release.tag_name }}
+      - run: echo "👉 npm publish --access public"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}          
