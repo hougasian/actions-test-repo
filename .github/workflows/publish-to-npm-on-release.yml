@@ -3,7 +3,9 @@ name: 📦 Publish package on release
 #on:
 #  release:
 #    types: [published]
-
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
 jobs:
   debug:
     name: Debug
